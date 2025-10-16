@@ -1,5 +1,5 @@
 # automatecm: CLI Command Automation Script
-![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Version](https://img.shields.io/badge/version-1.0.0-brightgreen.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg) ![automatecm](https://img.shields.io/badge/automatecm-1.10.25-brightgreen.svg)
 ![It's just a simple version](https://img.shields.io/badge/a%20simple%20version-8A2BE2)
 ## Overview
 
@@ -23,9 +23,9 @@ To get started with **automatecm**, follow these steps:
    ```bash
    cd automatecm
    ```
-3. Make the script executable(Check the .sh filename):
+3. Make the script executable:
    ```bash
-   chmod +x automatecm.sh #replace filename if changed!
+   chmod +x script.sh
    ```
 
 ## Usage
@@ -39,6 +39,4 @@ To run the script, use the following command:
 
 The script will show you a list of commands. Execute commands from the list by calling their corresponding numbers.
 
-## Contributing
-
-Contributions are welcome! If you have suggestions for improvements or new features, please fork the repository and submit a pull request.
+### This is a simple and first version of automatecm. Maybe it is useless!
