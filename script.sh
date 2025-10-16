@@ -1,14 +1,15 @@
 #!/bin/bash
 
-# Define color codes for output
+# color codes
 RED='\033[0;31m'
 GREEN='\033[0;32m'
 BLUE='\033[0;34m'
 YELLOW='\033[1;33m'
+WHITE='\033[1;35m]'
 CYAN='\033[0;36m'
 NC='\033[0m' # No Color
 
-# Function to display a random system tip
+#random system tip
 display_random_tip() {
     local tips=(
         "Use 'Ctrl + C' to stop a running command in the terminal."
@@ -26,7 +27,7 @@ display_random_tip() {
     echo -e "${CYAN}Tip: $tip${NC}"
 }
 
-# Function to display available commands
+# available commands lsit:
 display_commands() {
     echo -e "${BLUE}Available commands:${NC}"
     echo "1) update_system - Update system packages"
@@ -54,7 +55,7 @@ display_commands() {
     echo -e "${YELLOW}0) exit - Exit the script${NC}"
 }
 
-# Function to execute a command and log result
+#function to execute a command and log results
 execute_command() {
     local cmd=$1
     local desc=$2
@@ -73,7 +74,7 @@ execute_command() {
     fi
 }
 
-# Function to log results to a file
+# function to log results to a file:
 log_result() {
     local cmd=$1
     local status=$2
@@ -87,9 +88,9 @@ echo -e "${GREEN}Starting interactive automation script...${NC}"
 # Initialize counter for executed commands
 command_count=0
 
-# Main loop to keep prompting for commands
+# Main loop to keep prompting for commands:
 while true; do
-    # Display available commands
+    # display available commands
     display_commands
     echo -n "Enter command number (0 to exit): "
     read choice
@@ -217,3 +218,4 @@ while true; do
     esac
     echo ""
 done
+# finished
